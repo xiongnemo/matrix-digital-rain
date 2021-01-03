@@ -3,7 +3,7 @@ Marshmallow's implementation of Matrix Digital Rain (the movie)
 
 ## Usage
 
-Open up `demo.html`
+Open up `index.html`
 
 ## Feature
 
