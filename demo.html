@@ -1,0 +1,37 @@
+<!-- use UTF-8 to deal with non-ascii chars -->
+<meta charset="UTF-8">
+<html>
+
+<head>
+    <link rel="stylesheet" href="./css/matrix.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+</head>
+
+<body>
+    <canvas id="c"></canvas>
+    <script src="./js/matrix.js"></script>
+    <script>
+        draw_matrix();
+        $(window).on('resize', function() {
+            deleteOldCanvas();
+            resizeCanvas();
+            draw_matrix();
+        });
+
+        function deleteOldCanvas() {
+            var oldcanv = document.getElementById('c');
+            document.body.removeChild(oldcanv)
+            var canv = document.createElement('canvas');
+            canv.id = 'c';
+            document.body.appendChild(canv);
+        }
+
+        function resizeCanvas() {
+            var canvas = $('#c');
+            canvas.css("width", $(window).outerWidth());
+            canvas.css("height", $(window).outerHeight());
+        }
+    </script>
+</body>
+
+</html>
