@@ -9,7 +9,7 @@ function draw_matrix() {
     c.width = window.outerWidth;
 
     // charset to use
-    var matrix_charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789あいうえおかきくけこさしすせそたちつてとはひふへほなにぬねのまみむめもらりるれろやゆよんがぎぐげござじずぜぞだぢづでどばびぶべぼぱぴぷぺぽアイウエオカキクケコサシスセソタチツテトハヒフヘホナニヌネノマミムメモラリルレロヤユヨンガギグゲゴザジズゼゾダヂヅデドバビブベボパピプペポ";
+    var matrix_charset = "ａｂｃｄｅｆｇｈｉｊｋｌｍｎｏｐｑｒｓｔｕｖｗｘｙｚＡＢＣＤＥＦＧＨＩＪＫＬＭＮＯＰＱＲＳＴＵＶＷＸＹＺ０１２３４５６７８９あいうえおかきくけこさしすせそたちつてとはひふへほなにぬねのまみむめもらりるれろやゆよんがぎぐげござじずぜぞだぢづでどばびぶべぼぱぴぷぺぽアイウエオカキクケコサシスセソタチツテトハヒフヘホナニヌネノマミムメモラリルレロヤユヨンガギグゲゴザジズゼゾダヂヅデドバビブベボパピプペポ";
     // convert the string into an array of single characters
     var matrix = matrix_charset.split("");
 
